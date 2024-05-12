@@ -21,6 +21,7 @@ const SalesOverview = () => {
     const secondary = theme.palette.secondary.main;
 
     // chart
+    // Si modifico los siguientes valores puedo cambiar la gráfica
     const optionscolumnchart: any = {
         chart: {
             type: 'bar',
@@ -80,18 +81,22 @@ const SalesOverview = () => {
     };
     const seriescolumnchart: any = [
         {
-            name: 'Eanings this month',
-            data: [355, 390, 300, 350, 390, 180, 355, 390],
+            name: 'Aquí puedo poner cualquier nombre',
+            data: [1, 2],
         },
         {
-            name: 'Expense this month',
-            data: [280, 250, 325, 215, 250, 310, 280, 250],
+            name: 'Por ejemplo',
+            data: [2, 3],
+        },
+        {
+            name: 'Nuevos datos',
+            data: [3, 4],
         },
     ];
 
+    // Aquí podemos editar el componente de la gráfica de ventas
     return (
-
-        <DashboardCard title="Sales Overview" action={
+        <DashboardCard title="Nuevos empleos" action={
             <Select
                 labelId="month-dd"
                 id="month-dd"

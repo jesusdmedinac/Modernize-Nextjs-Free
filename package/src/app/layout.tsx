@@ -11,7 +11,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* Aquí empieza todo */}
         <ThemeProvider theme={baselightTheme}>
+          {/* Aquí podemos editar los estilos */}
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline />
           {children}
