@@ -81,22 +81,19 @@ const SalesOverview = () => {
     };
     const seriescolumnchart: any = [
         {
-            name: 'Aquí puedo poner cualquier nombre',
-            data: [1, 2],
+            name: 'Puestos publicados',
+            data: [20, 30, 20, 10, 22, 11, 12, 19],
         },
         {
-            name: 'Por ejemplo',
-            data: [2, 3],
+            name: 'candidatos Nuevos',
+            data: [31, 12, 12, 12, 31, 10, 31, 32],
         },
-        {
-            name: 'Nuevos datos',
-            data: [3, 4],
-        },
+        
     ];
 
     // Aquí podemos editar el componente de la gráfica de ventas
     return (
-        <DashboardCard title="Nuevos empleos" action={
+        <DashboardCard title="Estadisticas mensuales" action={
             <Select
                 labelId="month-dd"
                 id="month-dd"
@@ -104,9 +101,10 @@ const SalesOverview = () => {
                 size="small"
                 onChange={handleChange}
             >
-                <MenuItem value={1}>March 2023</MenuItem>
-                <MenuItem value={2}>April 2023</MenuItem>
-                <MenuItem value={3}>May 2023</MenuItem>
+                <MenuItem value={1}>Marzo 2024</MenuItem>
+                <MenuItem value={2}>Abril 2024</MenuItem>
+                <MenuItem value={3}>Mayo 2024</MenuItem>
+                <MenuItem value={3}>Junio 2024</MenuItem>
             </Select>
         }>
             <Chart

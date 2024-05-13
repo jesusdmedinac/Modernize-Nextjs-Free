@@ -13,39 +13,35 @@ import DashboardCard from '@/app/(DashboardLayout)//components/shared/DashboardC
 const products = [
     {
         id: "1",
-        name: "Sunil Joshi",
-        post: "Web Designer",
-        pname: "Elite Admin",
-        priority: "Low",
+        name: "Bryan Alberto",
+        pname: "front-end",
+        priority: "HTML,CSS",
         pbg: "primary.main",
-        budget: "3.9",
+        budget: "McDonald's",
     },
     {
         id: "2",
-        name: "Andrew McDownland",
-        post: "Project Manager",
-        pname: "Real Homes WP Theme",
-        priority: "Medium",
+        name: "Santos Moises",
+        pname: "Full Stack",
+        priority: "ASTRO, REACT",
         pbg: "secondary.main",
-        budget: "24.5",
+        budget: "YouTube",
     },
     {
         id: "3",
-        name: "Christopher Jamil",
-        post: "Project Manager",
-        pname: "MedicalPro WP Theme",
-        priority: "High",
+        name: "Christopher salad",
+        pname: "Back-end",
+        priority: "Java, php, C#",
         pbg: "error.main",
-        budget: "12.8",
+        budget: "Facebook",
     },
     {
         id: "4",
-        name: "Nirav Joshi",
-        post: "Frontend Engineer",
-        pname: "Hosting Press HTML",
-        priority: "Critical",
+        name: "Estrada Mario",
+        pname: "developer",
+        priority: "java, html, css",
         pbg: "success.main",
-        budget: "2.4",
+        budget: "Epic Games",
     },
 ];
 
@@ -53,7 +49,7 @@ const products = [
 const ProductPerformance = () => {
     return (
 
-        <DashboardCard title="Product Performance">
+        <DashboardCard title="Nuevos candidatos">
             <Box sx={{ overflow: 'auto', width: { xs: '280px', sm: 'auto' } }}>
                 <Table
                     aria-label="simple table"
@@ -66,27 +62,27 @@ const ProductPerformance = () => {
                         <TableRow>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Id
+                                N0°
                                 </Typography>
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Assigned
+                                    Nombre
                                 </Typography>
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Name
+                                    Especialidad
                                 </Typography>
                             </TableCell>
                             <TableCell>
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Priority
+                                    Lenguajes
                                 </Typography>
                             </TableCell>
                             <TableCell align="right">
                                 <Typography variant="subtitle2" fontWeight={600}>
-                                    Budget
+                                    recomendacion
                                 </Typography>
                             </TableCell>
                         </TableRow>
@@ -121,7 +117,7 @@ const ProductPerformance = () => {
                                                     fontSize: "13px",
                                                 }}
                                             >
-                                                {product.post}
+                                               
                                             </Typography>
                                         </Box>
                                     </Box>
@@ -143,7 +139,7 @@ const ProductPerformance = () => {
                                     ></Chip>
                                 </TableCell>
                                 <TableCell align="right">
-                                    <Typography variant="h6">${product.budget}k</Typography>
+                                    <Typography variant="h6">{product.budget}</Typography>
                                 </TableCell>
                             </TableRow>
                         ))}

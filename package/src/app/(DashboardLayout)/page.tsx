@@ -11,7 +11,7 @@ import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/Monthl
 
 const Dashboard = () => {
   return (
-    <PageContainer title="Dashboard" description="this is Dashboard">
+    <PageContainer title="Maxister" description="this is Dashboard">
       {/* Voy a comentar lo siguiente para que podamos ver como funciona */}
       <Box>
         <Grid container spacing={3}>
