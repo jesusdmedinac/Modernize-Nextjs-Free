@@ -28,15 +28,6 @@ const ecoCard = [
   },
 ];
 
-const Blog = () => {
- 
-    
-         
-          
-        
-                
-      
-  
-};
+const Blog = () => (<p>Blog</p>);
 
 export default Blog;

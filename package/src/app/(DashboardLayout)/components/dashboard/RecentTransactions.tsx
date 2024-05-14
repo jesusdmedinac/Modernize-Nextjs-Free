@@ -43,7 +43,7 @@ const RecentTransactions = () => {
             <TimelineContent>Requiere conocimiento basico en REACT y ASTRO</TimelineContent>
           </TimelineItem>
           <TimelineItem>
-            <TimelineOppositeContent fontWeight="600">McDonald's</TimelineOppositeContent>
+            <TimelineOppositeContent fontWeight="600">McDonald&apos;s</TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary" variant="outlined" />
               <TimelineConnector />
