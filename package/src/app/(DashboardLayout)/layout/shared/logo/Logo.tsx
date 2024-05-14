@@ -11,8 +11,16 @@ const LinkStyled = styled(Link)(() => ({
 
 const Logo = () => {
   return (
-    <LinkStyled href="/">
-      <Image src="/images/logos/dark-logo.svg" alt="logo" height={70} width={174} priority />
+    <LinkStyled href="/" style={{
+      display: "flex",
+      flexDirection: "row",
+      fontSize: "16pt",
+      textDecoration: "none",
+      color: "black",
+      fontWeight: "bold"
+    }}>
+      <Image src="/images/logos/logo - maxister.jpg" alt="logo" height={64} width={64} priority />
+      <p>MAXISTER</p>
     </LinkStyled>
   );
 };
